@@ -209,15 +209,15 @@ function quiz() {
 // This is the 2 quiz button portion
 
 const button2 = document.querySelector('#quizButton2');
-button2.onclick = function() {guessingGame();};
+button2.onclick = guessingGame;
 
 function guessingGame() {
   const questions = [
     'What is the capital of France?',
     'What is the largest planet in our solar system?',
     'What is the chemical symbol for water?',
-    'Who wrote \'Romeo and Juliet\'?',
-    'What year did the Titanic sink?',
+    'Who wrote \'The Gettysburg Address\'?',
+    'In what year did the USA declare independence?',
     'How many states are there in the USA?',
     'Name a primary color',
   ];
@@ -226,8 +226,8 @@ function guessingGame() {
     'Paris',
     'Jupiter',
     'H2O',
-    ['William Shakespeare', 'Shakespeare'],
-    '1912',
+    ['Abraham Lincoln', 'Lincoln'],
+    '1776',
     '50',
     ['Red', 'Yellow', 'Blue'],
 
@@ -235,24 +235,31 @@ function guessingGame() {
 
   let score = 0;
 
-  for (let i=0; i < questions.length; i++){
+  for (let i = 0; i < questions.length; i++) {
     const guess = prompt(`Question ${i + 1}: ${questions[i]}`);
     const correctAnswer = answers[i];
 
     if (Array.isArray(correctAnswer)) {
-      if (correctAnswer.includes(guess)) {
+      // Convert both guess and correct answers to lowercase for comparison
+      const lowerCaseGuess = guess.toLowerCase();
+      const lowerCaseCorrectAnswers = correctAnswer.map(answer => answer.toLowerCase());
+
+      if (lowerCaseCorrectAnswers.includes(lowerCaseGuess)) {
         score++;
         alert(`Correct! The possible correct answers are: ${correctAnswer.join(', ')}`);
-        break;
+      } else {
+        // Display the correct answers even if the user's input is incorrect
+        alert(`Incorrect! The correct answer(s) is/are: ${correctAnswer.join(', ')}`);
       }
     } else {
       if (guess.toLowerCase() === correctAnswer.toLowerCase()) {
         score++;
-        alert("Correct!");
-        break;
+        alert('Correct!');
+      } else {
+        // Display the correct answer even if the user's input is incorrect
+        alert(`Incorrect! The correct answer is: ${correctAnswer}`);
       }
     }
-
   }
-
+  alert(`You got ${score} out of ${questions.length} questions correct.`);
 }
