@@ -1,8 +1,6 @@
-# Lab-003
+# About Me Project
 
-Code 201 Lab 003 | 21 FEB 2024
-
-## About Me Project
+Code 201 Labs
 
 1. [GitHub Repo Link]()
 2. [Deployed Site: GitHub Pages Site]()
