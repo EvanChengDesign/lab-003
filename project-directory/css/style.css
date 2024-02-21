@@ -79,12 +79,8 @@ footer {
     margin:  0 auto;
 }
 
-#top-ten {
 
-  margin-left: 20px;
-
-
-
+#topTen ol {
+  padding-left: 20px;
 }
-
 
