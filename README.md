@@ -1,4 +1,5 @@
-# lab-003
+# Lab-003
+
 Code 201 Lab 003 | 21 FEB 2024
 
 ## About Me Project
@@ -6,7 +7,6 @@ Code 201 Lab 003 | 21 FEB 2024
 1. [GitHub Repo Link]()
 2. [Deployed Site: GitHub Pages Site]()
 3. ![Lighthouse Report]()
-
 
 ## Problem Domain
 
