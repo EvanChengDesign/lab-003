@@ -5,7 +5,7 @@ Code 201 Lab 003 | 21 FEB 2024
 
 1. [GitHub Repo Link]()
 2. [Deployed Site: GitHub Pages Site]()
-3. ! Lighthouse Report ()
+3. ![Lighthouse Report]()
 
 
 ## Problem Domain
