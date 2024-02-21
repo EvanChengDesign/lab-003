@@ -187,7 +187,7 @@ function quiz() {
         } else if (guessNumber < correctAge) {
           console.log(`Attempt ${i}: Too low`);
           alert('Too low. Please try again!');
-        } else {
+        } else if (guessNumber > correctAge) {
           console.log(`Attempt ${i}: Too high`);
           alert('Too high. Please try again!');
         }
@@ -208,5 +208,30 @@ function quiz() {
 
 // This is the 2 quiz button portion
 
-const button = document.querySelector('#quizButton2');
-button.onclick = function() {quiz();};
+const button2 = document.querySelector('#quizButton2');
+button2.onclick = function() {guessingGame();};
+
+function guessingGame() {
+  const questions = [
+    'What is the capital of France?',
+    'What is the largest planet in our solar system?',
+    'What is the chemical symbol for water?',
+    'Who wrote \'Romeo and Juliet\'?',
+    'What year did the Titanic sink?',
+    'How many states are there in the USA?',
+    'Name a primary color',
+  ];
+
+  const answers = [
+    'Paris',
+    'Jupiter',
+    'H2O',
+    ['William Shakespeare', 'Shakespeare'],
+    '1912',
+    '50',
+    ['Red', 'Yellow', 'Blue'],
+
+  ];
+
+
+}
