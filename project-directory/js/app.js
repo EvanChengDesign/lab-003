@@ -233,5 +233,26 @@ function guessingGame() {
 
   ];
 
+  let score = 0;
+
+  for (let i=0; i < questions.length; i++){
+    const guess = prompt(`Question ${i + 1}: ${questions[i]}`);
+    const correctAnswer = answers[i];
+
+    if (Array.isArray(correctAnswer)) {
+      if (correctAnswer.includes(guess)) {
+        score++;
+        alert(`Correct! The possible correct answers are: ${correctAnswer.join(', ')}`);
+        break;
+      }
+    } else {
+      if (guess.toLowerCase() === correctAnswer.toLowerCase()) {
+        score++;
+        alert("Correct!");
+        break;
+      }
+    }
+
+  }
 
 }
