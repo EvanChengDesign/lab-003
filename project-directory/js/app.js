@@ -206,4 +206,7 @@ function quiz() {
 
 }
 
+// This is the 2 quiz button portion
 
+const button = document.querySelector('#quizButton2');
+button.onclick = function() {quiz();};
