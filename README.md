@@ -2,8 +2,8 @@
 
 Code 201 - Lab 003
 
-1. [GitHub Repo Link](https://github.com/EvanChengDesign/lab-003.git)
-2. [Deployed Site: GitHub Pages Site](https://evanchengdesign.github.io/lab-003/project-directory/index.html)
+1. [GitHub Repo Link]()
+2. [Deployed Site: GitHub Pages Site]()
 
 
 
