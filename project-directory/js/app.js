@@ -241,10 +241,10 @@ function guessingGame() {
 
     if (Array.isArray(correctAnswer)) {
       // Convert both guess and correct answers to lowercase for comparison
-      const lowerCaseGuess = guess.toLowerCase();
+      const newGuess = guess.toLowerCase();
       const lowerCaseCorrectAnswers = correctAnswer.map(answers => answers.toLowerCase());
 
-      if (lowerCaseCorrectAnswers.includes(lowerCaseGuess)) {
+      if (lowerCaseCorrectAnswers.indexOf(newGuess) !== -1) {
         score++;
         alert(`Correct! The possible correct answers are: ${correctAnswer.join(', ')}`);
       } else {
