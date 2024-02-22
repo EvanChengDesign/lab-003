@@ -112,13 +112,30 @@ footer {
   font-size: 1.2rem;
 }
 
-#quizButton {
+#buttonStyles {
+  display: flex;
+  justify-content: center; /* Add space between buttons */
+}
 
-    display: block;
-    background-color: #F78D3B;
-    border-radius: 5px;
-    padding: auto;
-    margin:  0 auto;
+#quizButton,
+#quizButton2 {
+  display: inline-block; /* Make buttons inline */
+  background-color: #F78D3B;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; /* Adjust padding as needed */
+  margin: 0; /* Reset margin */
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#quizButton:hover,
+#quizButton2:hover {
+  background-color: #E76E21; /* Change color on hover */
+
 }
 
 
