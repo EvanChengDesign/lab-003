@@ -7,12 +7,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   background-color: #f8f9fa;
-  color: #333;
+  color: hsl(0, 0%, 20%);
 
 }
 #dropdown-section {
-  flex: 1;
+  margin: 10px; /* Add margin for spacing */
   padding: 20px;
+  border-radius: 10px; /* Add rounded edges */
+  background-color: #0f4c55; /* Optional: background color */
+  color: #fff;
+  flex: 1;
 }
 
 #dropdown-section ul {
@@ -33,11 +37,6 @@ body {
 #dropdown-section p {
   font-size: 1rem;
   margin-top: 0;
-}
-
-#dropdown-section {
-  background-color: #f8f9fa;
-  color: #333;
 }
 
 #dropdown-section h2 {
@@ -118,13 +117,38 @@ footer {
     margin:  0 auto;
 }
 
-#topTen {
-  padding: 20px;
-}
 
-#topTen ol {
-  padding-left: 20px;
-}
+#topTen {
+  padding: 30px;
+  float: right;
+  width: 40%; /* Adjust width as needed */
+  background-color: #007bff;
+  border-radius: 10px;
+  margin-left: 20px; /* Add some margin to separate from other content */
+  }
+
+  #topTen h2 {
+    color: #fff;
+    margin-top: 0;
+  }
+
+  #topTen ol {
+    padding: 0;
+    color: #fff;
+  }
+
+  #topTen li {
+    margin: 20px;
+  }
+
+  #topTen li a {
+    text-decoration: one;
+    color: #fff;
+  }
+
+  #topTen li a:hover {
+    color: #0ae47e;
+  }
 
 #quizButton2 {
 
