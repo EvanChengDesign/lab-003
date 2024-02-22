@@ -8,15 +8,40 @@ body {
   line-height: 1.6;
   background-color: #f8f9fa;
   color: hsl(0, 0%, 20%);
-
 }
-#dropdown-section {
-  margin: 10px; /* Add margin for spacing */
-  padding: 20px;
-  border-radius: 10px; /* Add rounded edges */
-  background-color: #0f4c55; /* Optional: background color */
+
+footer {
+  background-color: #343a40;
   color: #fff;
-  flex: 1;
+  padding: auto;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+}
+
+#dropdown-section {
+  margin: 100px 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #0f4c55;
+  color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -30,7 +55,7 @@ body {
 }
 
 #dropdown-section h2 {
-  font-weight: bolder;
+  font-weight: bold;
   font-size: 1.5rem;
   margin-top: 0;
 }
@@ -38,106 +63,63 @@ body {
 #dropdown-section p {
   font-size: 1rem;
   margin-top: 0;
-}
-
-#dropdown-section h2 {
-  font-weight: bolder;
-  font-size: 1.5rem;
-  margin-top: 0;
-}
-
-#dropdown-section p {
-  font-size: 1rem;
-  margin-top: 0;
-}
-header {
-  background-color: #007bff;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-header h1 {
-  font-weight: bolder;
-  font-size: 2rem;
-  margin: 0;
-}
-
-main {
-  flex: 1;
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 20px;
-}
-
-h2 {
-  font-weight: bolder;
-  font-size: 1.5rem;
-  margin-top: 0;
-}
-
-p {
-  font-size: 1rem;
-  margin-top: 0;
-}
-
-footer {
-  background-color: #343a40;
-  color: #fff;
-  padding: auto;
-  text-align: center;
-  padding: 10px;
-}
-
-/* Specific styles for welcome message */
-#welcome-message {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #007bff;
-  color: #fff;
-  text-align: center;
-  padding: 30px;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-}
-
-#welcome-message h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-#welcome-message p {
-  font-size: 1.2rem;
 }
 
 #buttonStyles {
-  display: flex;
-  justify-content: center; /* Add space between buttons */
+  text-align: center; /* Center align horizontally */
+  margin-top: 20px; /* Optional: Add margin for spacing */
 }
 
 #quizButton,
 #quizButton2 {
-  display: inline-block; /* Make buttons inline */
+  display: inline-block; /* Make buttons display inline-block */
   background-color: #F78D3B;
   border: none;
   border-radius: 5px;
   padding: 10px 20px; /* Adjust padding as needed */
-  margin: 0; /* Reset margin */
   cursor: pointer;
   color: white;
   font-size: 16px;
-  text-align: center;
   text-decoration: none;
+  margin-right: 20px; /* Add margin between buttons */
 }
 
 #quizButton:hover,
 #quizButton2:hover {
   background-color: #E76E21; /* Change color on hover */
-
+}
+#newSectionLeft {
+  padding: 20px;
+  float: left;
+  width: 40%; /* Adjust width as needed */
+  background-color: #007bff;
+  border-radius: 10px;
+  margin: 20px 10px; /* Add some margin to separate from other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
+#newSectionLeft h2 {
+  color: #fff;
+  margin-top: 0;
+}
+
+#newSectionLeft ol {
+  padding: 0;
+  color: #fff;
+}
+
+#newSectionLeft li {
+  margin: 20px;
+}
+
+#newSectionLeft li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#newSectionLeft li a:hover {
+  color: #0ae47e;
+}
 
 #topTen {
   padding: 20px;
@@ -145,41 +127,37 @@ footer {
   width: 40%; /* Adjust width as needed */
   background-color: #007bff;
   border-radius: 10px;
-  margin-left: 20px; /* Add some margin to separate from other content */
+  margin: 20px 10px; /* Add some margin to separate from other content */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  }
-
-  #topTen h2 {
-    color: #fff;
-    margin-top: 0;
-  }
-
-  #topTen ol {
-    padding: 0;
-    color: #fff;
-  }
-
-  #topTen li {
-    margin: 20px;
-  }
-
-  #topTen li a {
-    text-decoration: one;
-    color: #fff;
-  }
-
-  #topTen li a:hover {
-    color: #0ae47e;
-  }
-
-#quizButton2 {
-
-    display: block;
-    background-color: #F78D3B;
-    border-radius: 5px;
-    padding: auto;
-    margin:  0 auto;
-
 }
 
+#topTen h2 {
+  color: #fff;
+  margin-top: 0;
+}
 
+#topTen ol {
+  padding: 0;
+  color: #fff;
+}
+
+#topTen li {
+  margin: 20px;
+}
+
+#topTen li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#topTen li a:hover {
+  color: #0ae47e;
+}
+
+#quizButton2 {
+  display: block;
+  background-color: #F78D3B;
+  border-radius: 5px;
+  padding: auto;
+  margin:  0 auto;
+}
