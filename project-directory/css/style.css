@@ -65,11 +65,13 @@ header h1 {
 
 #buttonStyles {
   margin: 20px 10px;
+  gap: 10px;
 }
 
-#quizButton,
-#quizButton2 {
-  display: inline-block; /* Make buttons display inline-block */
+#quizButton1 {
+  display: flex;
+ /* Make buttons display inline-block */
+  margin-left: 90px;
   background-color: #F78D3B;
   border: none;
   border-radius: 5px;
@@ -78,6 +80,22 @@ header h1 {
   color: white;
   font-size: 16px;
   text-decoration: none;
+  float: left;
+
+}
+
+
+#quizButton2 {
+  display: flex; /* Make buttons display inline-block */
+  background-color: #F78D3B;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  float: clear;
 }
 
 #quizButton:hover,
