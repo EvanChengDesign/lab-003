@@ -37,12 +37,10 @@ header h1 {
 }
 
 #dropdown-section {
-  margin: 100px 10px;
+  margin-top: 90px;
   padding: 20px;
-  border-radius: 10px;
-  background-color: #0f4c55;
-  color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  background-color: #E9E9E9;
+  color: #454444;
 }
 
 #dropdown-section ul {
