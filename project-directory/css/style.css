@@ -65,42 +65,40 @@ header h1 {
 
 #buttonStyles {
   margin: 20px 10px;
-  gap: 10px;
 }
 
 #quizButton1 {
   display: flex;
  /* Make buttons display inline-block */
-  margin-left: 90px;
-  background-color: #F78D3B;
+  background-color: #FFD500;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px 20px;
   cursor: pointer;
-  color: white;
+  color: black;
   font-size: 16px;
   text-decoration: none;
-  float: left;
+  float: right;
 
 }
 
 
 #quizButton2 {
   display: flex; /* Make buttons display inline-block */
-  background-color: #F78D3B;
+  background-color: #ffd500;
   border: none;
-  border-radius: 5px;
+  border-radius: 2%;
   padding: 10px 20px;
   cursor: pointer;
-  color: white;
+  color: black;
   font-size: 16px;
   text-decoration: none;
-  float: clear;
+  float: right;
 }
 
-#quizButton:hover,
+#quizButton1:hover,
 #quizButton2:hover {
-  background-color: #E76E21;
+  background-color: #ffb700;
 }
 #newSectionLeft {
   padding: 20px;
