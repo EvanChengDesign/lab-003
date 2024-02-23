@@ -12,6 +12,6 @@ Code 201 - Lab 003
 ![Accessibility Score Image](./project-directory/img/Screenshot%202024-02-21%20at%2020.21.21.png)
 
 ## Lab 004 - Thursday 
-[I was driver](https://github.com/MrShambles/201-project/pull/1)  
+[I was driver:](https://github.com/MrShambles/201-project/pull/1)  
 
 [I was navigator:](https://github.com/EvanChengDesign/lab-003/pull/1)
