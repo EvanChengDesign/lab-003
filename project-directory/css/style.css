@@ -66,17 +66,14 @@ header h1 {
   margin-top: 0;
 }
 
-#quizButtonStyles1,
-#quizButtonStyles2 {
+#quizButtonContainer {
   display: flex;
-  justify-content: center; /* Align buttons horizontally */
-  gap: 20px; /* Add 20px spacing between buttons */
-  margin-top: 20px; /* Add margin between buttons and content above */
+  justify-content: center;
+  margin-top: 20px;
 }
 
 #quizButton1,
 #quizButton2 {
-  display: inline-block; /* Set buttons to inline-block */
   background-color: #FFD500;
   border: none;
   border-radius: 10px;
@@ -85,6 +82,7 @@ header h1 {
   color: black;
   font-size: 16px;
   text-decoration: none;
+  margin: 0 10px; /* Add margin between buttons */
 }
 
 #quizButton1:hover,
@@ -92,14 +90,16 @@ header h1 {
   background-color: #ffb700;
 }
 
+#main-content {
+  display: flex;
+}
 
 #currentPlaylist {
+  flex: 1;
   padding: 20px;
-  float: left;
-  width: 50%; /* Adjust width as needed */
   background-color: #007bff;
   border-radius: 10px;
-  margin: 50px 10px; /* Add some margin to separate from other content */
+  margin: 50px 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -113,12 +113,11 @@ header h1 {
 }
 
 #topTen {
+  flex: 1;
   padding: 20px;
-  float: right;
-  width: 40%; /* Adjust width as needed */
   background-color: #da3a3a;
   border-radius: 10px;
-  margin: 50px 10px; /* Add some margin to separate from other content */
+  margin: 50px 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -145,12 +144,4 @@ header h1 {
 
 #topTen li a:hover {
   color: #0ae47e;
-}
-
-#quizButton2 {
-  display: block;
-  background-color: #F78D3B;
-  border-radius: 5px;
-  padding: auto;
-  margin:  0 auto;
 }
