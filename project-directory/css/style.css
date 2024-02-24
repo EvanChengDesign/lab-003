@@ -38,7 +38,10 @@ header h1 {
 
 #dropdown-section {
   margin-top: 90px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 20px;
+  border-radius: 10px;
   background-color: #E9E9E9;
   color: #454444;
 }
@@ -63,13 +66,17 @@ header h1 {
   margin-top: 0;
 }
 
-#buttonStyles {
-  margin: 20px 10px;
+#quizButtonStyles1,
+#quizButtonStyles2 {
+  display: flex;
+  justify-content: center; /* Align buttons horizontally */
+  gap: 20px; /* Add 20px spacing between buttons */
+  margin-top: 20px; /* Add margin between buttons and content above */
 }
 
-#quizButton1 {
-  display: flex;
- /* Make buttons display inline-block */
+#quizButton1,
+#quizButton2 {
+  display: inline-block; /* Set buttons to inline-block */
   background-color: #FFD500;
   border: none;
   border-radius: 10px;
@@ -78,72 +85,46 @@ header h1 {
   color: black;
   font-size: 16px;
   text-decoration: none;
-  float: right;
-
-}
-
-
-#quizButton2 {
-  display: flex; /* Make buttons display inline-block */
-  background-color: #ffd500;
-  border: none;
-  border-radius: 2%;
-  padding: 10px 20px;
-  cursor: pointer;
-  color: black;
-  font-size: 16px;
-  text-decoration: none;
-  float: right;
 }
 
 #quizButton1:hover,
 #quizButton2:hover {
   background-color: #ffb700;
 }
-#newSectionLeft {
+
+
+#currentPlaylist {
   padding: 20px;
   float: left;
   width: 50%; /* Adjust width as needed */
   background-color: #007bff;
   border-radius: 10px;
-  margin: 20px 10px; /* Add some margin to separate from other content */
+  margin: 50px 10px; /* Add some margin to separate from other content */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-#newSectionLeft h2 {
+#currentPlaylist h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: larger;
   color: #fff;
   margin-top: 0;
-}
-
-#newSectionLeft ol {
-  padding: 0;
-  color: #fff;
-}
-
-#newSectionLeft li {
-  margin: 20px;
-}
-
-#newSectionLeft li a {
-  text-decoration: none;
-  color: #fff;
-}
-
-#newSectionLeft li a:hover {
-  color: #0ae47e;
+  margin-bottom: 10px;
 }
 
 #topTen {
   padding: 20px;
   float: right;
   width: 40%; /* Adjust width as needed */
-  background-color: #007bff;
+  background-color: #da3a3a;
   border-radius: 10px;
-  margin: 20px 10px; /* Add some margin to separate from other content */
+  margin: 50px 10px; /* Add some margin to separate from other content */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 #topTen h2 {
+  font-weight: bolder;
+  font-size: larger;
   color: #fff;
   margin-top: 0;
 }
