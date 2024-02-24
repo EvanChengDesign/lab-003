@@ -115,7 +115,7 @@ guessAgeGame();
 
 // This is the quiz button portion
 
-const button = document.querySelector('#quizButton');
+const button = document.querySelector('#quizButton1');
 button.onclick = function() {quiz();};
 
 function quiz() {
