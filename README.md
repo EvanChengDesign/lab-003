@@ -23,3 +23,6 @@ Additional Links to third partner in group:
 [I was driver:](https://github.com/MrShambles/201-project/pull/1)  
 
 [I was navigator:](https://github.com/EvanChengDesign/lab-003/pull/1)
+
+## Lab 005b - Friday
+![Lighthouse Score Update](./project-directory/img/Screenshot%202024-02-23%20at%2022.21.43.png)

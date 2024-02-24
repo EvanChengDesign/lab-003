@@ -49,24 +49,19 @@ function askQuestions() {
       if (userAnswer === 'YES' || userAnswer === 'NO') {
         // Check if user's answer is correct
         if (userAnswer === correctAnswers[i]) {
-          // console.log('User answered correctly: Yes');
           alert('Correct!');
           // Store user's answer
           userAnswers.push(userAnswer);
           answeredCorrectly = true;
         } else {
-          // console.log('User answered incorrectly: No');
           alert('Incorrect! Please try again.');
         }
       } else {
-        // console.log('Invalid input. Please answer with \'yes\' or \'no\'.');
         alert('Invalid input. Please answer with \'yes\' or \'no\'.');
       }
     }
   }
 
-  // Display user's answers in the console
-  console.log('User\'s answers:', userAnswers);
 }
 
 // Call the function to ask questions
@@ -82,30 +77,24 @@ function guessAgeGame() {
   for (let i = 1; i <= maxAttempts; i++) {
     const guess = prompt(`Attempt ${i}: Guess my age (between 1 and 100):`);
 
-    console.log(`Attempt ${i}: Input: ${guess}`);
 
     // checks if the input is a number
     if (!isNaN(guess)) {
       const guessNumber = parseInt(guess, 10); // converts the input string to a number
 
       if (guessNumber === correctAge) {
-        console.log(`Attempt ${i}: Correct answer`);
         alert(`Congratulations! You guessed my age (${correctAge}) correctly in ${i} attempt(s).`);
         return;
       } else if (guessNumber < correctAge) {
-        console.log(`Attempt ${i}: Too low`);
         alert('Too low. Please try again!');
       } else {
-        console.log(`Attempt ${i}: Too high`);
         alert('Too high. Please try again!');
       }
     } else {
-      console.log(`Attempt ${i}: Invalid input`);
       alert('Invalid input. Please enter a number between 1 and 100.');
     }
   }
 
-  console.log(`All attempts used. Correct Answer: ${correctAge}`);
   alert(`Sorry, you have used all your attempts. My correct age is ${correctAge}`);
 
 }
@@ -146,24 +135,20 @@ function quiz() {
       if (userAnswer === 'YES' || userAnswer === 'NO') {
         // Check if user's answer is correct
         if (userAnswer === correctAnswers[i]) {
-          // console.log('User answered correctly: Yes');
           alert('Correct!');
           // Store user's answer
           userAnswers.push(userAnswer);
           answeredCorrectly = true;
         } else {
-          // console.log('User answered incorrectly: No');
           alert('Incorrect! Please try again.');
         }
       } else {
-        // console.log('Invalid input. Please answer with \'yes\' or \'no\'.');
         alert('Invalid input. Please answer with \'yes\' or \'no\'.');
       }
     }
   }
 
   // Display user's answers in the console
-  console.log('User\'s answers:', userAnswers);
 
   //  This is the function for asking 6th question with numerical input
 
@@ -174,30 +159,24 @@ function quiz() {
     for (let i = 1; i <= maxAttempts; i++) {
       const guess = prompt(`Attempt ${i}: Guess my age (between 1 and 100):`);
 
-      console.log(`Attempt ${i}: Input: ${guess}`);
 
       // checks if the input is a number
       if (!isNaN(guess)) {
         const guessNumber = parseInt(guess, 10); // converts the input string to a number
 
         if (guessNumber === correctAge) {
-          console.log(`Attempt ${i}: Correct answer`);
           alert(`Congratulations! You guessed my age (${correctAge}) correctly in ${i} attempt(s).`);
           return;
         } else if (guessNumber < correctAge) {
-          console.log(`Attempt ${i}: Too low`);
           alert('Too low. Please try again!');
         } else if (guessNumber > correctAge) {
-          console.log(`Attempt ${i}: Too high`);
           alert('Too high. Please try again!');
         }
       } else {
-        console.log(`Attempt ${i}: Invalid input`);
         alert('Invalid input. Please enter a number between 1 and 100.');
       }
     }
 
-    console.log(`All attempts used. Correct Answer: ${correctAge}`);
     alert(`Sorry, you have used all your attempts. My correct age is ${correctAge}`);
 
   }
